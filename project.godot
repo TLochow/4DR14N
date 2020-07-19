@@ -16,15 +16,20 @@ _global_script_class_icons={
 [application]
 
 config/name="4DR14N"
-run/main_scene="res://scenes/Main.tscn"
+run/main_scene="res://scenes/Story.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Global="*res://Global.gd"
+SceneChanger="*res://scenes/SceneChanger.tscn"
+SoundController="*res://scenes/SoundController.tscn"
 
 [display]
 
+window/size/width=800
+window/size/height=800
+window/size/fullscreen=true
 mouse_cursor/custom_image="res://sprites/cursor.png"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"

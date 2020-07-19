@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Retro Gaming.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/Instructions.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 1 )
+
+[node name="Instructions" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -624.0
+custom_fonts/font = SubResource( 1 )
+text = "Instructions"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 136.0
+custom_fonts/font = SubResource( 2 )
+text = "Use the Arrow Keys, WASD, ZQSD or IJKL to move.
+
+User your mouse to aim and left click to shoot.
+When you shoot, you enter Bullet Time mode.
+In this mode the game slows down and your bullet
+follows your mouse.
+
+Enemies spawn around the arena and move towards
+your position.
+They get faster, when they can see so so try to
+use Bullet Time to defeat them while they are
+behind walls.
+
+If you are hit or hit a wall with your bullet Adrian's
+stability will decrease, the game ends when it becomes
+too unstable.
+Defeating Enemies increases the stability.
+
+Enemies will swarm you, if you stand still.
+So be on the move.
+
+Left click to start the game."
+align = 1
+valign = 1
